@@ -1,0 +1,228 @@
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameScreen {
+    position: relative;
+    width: 640px;
+    height: 385px;
+    transform-origin: center center;
+    image-rendering: pixelated;
+    visibility: hidden;
+}
+
+#background {
+    position: absolute;
+    inset: 0;
+    width: 640px;
+    height: 385px;
+    image-rendering: pixelated;
+    user-select: none;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#game {
+    position: absolute;
+    left: 272px;
+    top: 85px;
+    width: 128px;
+    height: 270px;
+    background: transparent;
+    image-rendering: pixelated;
+    z-index: 5;
+}
+
+#doktorGrafika {
+    position: absolute;
+    left: 481px;
+    top: 51px;
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    display: none;
+    image-rendering: pixelated;
+    z-index: 20;
+}
+
+#gameOverImg {
+    position: absolute;
+    left: 52.5%;
+    top: 120px;
+    transform: translateX(-50%);
+    width: 224px;
+    height: auto;
+    display: none;
+    image-rendering: pixelated;
+    z-index: 30;
+}
+
+#stageCompletedImg {
+    position: absolute;
+    left: 52.5%;
+    top: 120px;
+    transform: translateX(-50%);
+    width: 254px;
+    height: 80px;
+    display: none;
+    image-rendering: pixelated;
+    z-index: 30;
+}
+
+#previewBox {
+    position: absolute;
+    left: 470px;
+    top: 42px;
+    width: 48px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 25;
+}
+
+.previewPolowka {
+    width: 16px;
+    height: 14px;
+    image-rendering: pixelated;
+}
+
+.animowanaTabletka {
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    image-rendering: pixelated;
+    z-index: 25;
+    pointer-events: none;
+}
+
+#lupaBox {
+    position: absolute;
+    left: 31px;
+    top: 202px;
+    width: 178px;
+    height: 178px;
+    overflow: hidden;
+    z-index: 25;
+}
+
+.wirusLupa {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    image-rendering: pixelated;
+    pointer-events: none;
+}
+
+#handBox {
+    position: absolute;
+    left: 455px;
+    top: 66px;
+    width: 96px;
+    height: 96px;
+    pointer-events: none;
+    z-index: 15;
+}
+
+#rekaCzesc1 {
+    position: absolute;
+    left: 44px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    image-rendering: pixelated;
+    display: none;
+}
+
+#rekaCzesc2 {
+    position: absolute;
+    left: 40px;
+    top: 16px;
+    width: 16px;
+    height: 18px;
+    image-rendering: pixelated;
+    display: none;
+}
+
+#rekaCzesc3 {
+    position: absolute;
+    left: 50px;
+    top: 32px;
+    width: 18px;
+    height: 16px;
+    image-rendering: pixelated;
+    display: none;
+}
+
+#rekaCzesc4 {
+    position: absolute;
+    image-rendering: pixelated;
+    width: 16px;
+    height: 16px;
+}
+
+#rekordBox {
+    left: 121px;
+    top: 81px;
+    z-index: 40;
+}
+
+#punktyBox {
+    left: 121px;
+    top: 133px;
+    z-index: 40;
+}
+
+#wirusyBox {
+    left: 569px;
+    top: 308px;
+    z-index: 40;
+}
+
+.digits {
+    position: absolute;
+    display: flex;
+    gap: 0;
+    image-rendering: pixelated;
+}
+
+.digits img {
+    width: 17px;
+    height: 17px;
+    image-rendering: pixelated;
+    display: block;
+}
+
+#rekordBox {
+    left: 73.5px;
+    top: 80px;
+}
+
+#punktyBox {
+    left: 73.5px;
+    top: 128px;
+}
+
+#wirusyBox {
+    left: 560px;
+    top: 336px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr Mario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./src//img/drmario.ico">
+</head>
+
+<body>
+    <div id="app">
+        <div id="gameScreen">
+            <img id="background" src="./src/img/pf.png" alt="Tło gry">
+
+            <div id="rekordBox" class="digits"></div>
+            <div id="punktyBox" class="digits"></div>
+            <div id="wirusyBox" class="digits"></div>
+
+            <img id="gameOverImg" src="./src/img/go.png" alt="Game Over">
+            <img id="stageCompletedImg" src="./src/img/sc.png" alt="Stage Completed">
+            <img id="doktorGrafika" src="./src/img/go_dr.png" alt="Doktor">
+            <div id="handBox">
+                <img id="rekaCzesc1" src="" alt="">
+                <img id="rekaCzesc2" src="" alt="">
+                <img id="rekaCzesc3" src="" alt="">
+                <img id="rekaCzesc4" src="" alt="">
+            </div>
+
+            <div id="previewBox"></div>
+            <div id="rzutBox"></div>
+            <div id="lupaBox"></div>
+
+            <canvas id="game" width="128" height="270"></canvas>
+        </div>
+    </div>
+    <script src="./dist/bundle.js"></script>
+</body>
+
+</html>

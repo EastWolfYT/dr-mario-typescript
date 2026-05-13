@@ -1,0 +1,15 @@
+{
+  "name": "dr-mario",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "prod": "webpack --mode production"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.5.4",
+    "typedoc": "^0.28.19",
+    "typescript": "^5.9.3",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.2"
+  }
+}
