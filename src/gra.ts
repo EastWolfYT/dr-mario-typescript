@@ -110,7 +110,6 @@ export class Gra {
     setInterval(() => {
       this.rysujCalaGre()
     }, 16)
-
   }
 
   zapiszRekordDoLocalStorage() {
@@ -218,77 +217,77 @@ export class Gra {
 
   pobierzSrcPreview(kolor: KolorPola, typ: string): string {
     if (kolor === "red") {
-      if (typ === "left") return "./src/img/br_left.png"
-      if (typ === "right") return "./src/img/br_right.png"
-      if (typ === "up") return "./src/img/br_up.png"
-      if (typ === "down") return "./src/img/br_down.png"
+      if (typ === "left") return "../dist/img/br_left.png"
+      if (typ === "right") return "../dist/img/br_right.png"
+      if (typ === "up") return "../dist/img/br_up.png"
+      if (typ === "down") return "../dist/img/br_down.png"
     }
 
     if (kolor === "blue") {
-      if (typ === "left") return "./src/img/bl_left.png"
-      if (typ === "right") return "./src/img/bl_right.png"
-      if (typ === "up") return "./src/img/bl_up.png"
-      if (typ === "down") return "./src/img/bl_down.png"
+      if (typ === "left") return "../dist/img/bl_left.png"
+      if (typ === "right") return "../dist/img/bl_right.png"
+      if (typ === "up") return "../dist/img/bl_up.png"
+      if (typ === "down") return "../dist/img/bl_down.png"
     }
     
     if (kolor === "yellow") {
-      if (typ === "left") return "./src/img/yl_left.png"
-      if (typ === "right") return "./src/img/yl_right.png"
-      if (typ === "up") return "./src/img/yl_up.png"
-      if (typ === "down") return "./src/img/yl_down.png"
+      if (typ === "left") return "../dist/img/yl_left.png"
+      if (typ === "right") return "../dist/img/yl_right.png"
+      if (typ === "up") return "../dist/img/yl_up.png"
+      if (typ === "down") return "../dist/img/yl_down.png"
     }
 
     return ""
   }
 
   ustawKlatkiReki() {
-  this.klatkiReki = [
-    {
-      part1: "./src/img/hands/up_1.png",
-      part2: "./src/img/hands/up_2.png",
-      part3: "./src/img/hands/up_3.png",
-      part4: null,
-      x1: 38,
-      y1: -4,
-      x2: 38,
-      y2: 14,
-      x3: 39,
-      y3: 32.2,
-      x4: 0,
-      y4: 0
-    },
-    {
-      part1: "./src/img/hands/middle11.png",
-      part2: "./src/img/hands/middle12.png",
-      part3: "./src/img/hands/middle21.png",
-      part4: "./src/img/hands/middle22.png",
-      x1: 23,
-      y1: 14,
-      x2: 41,
-      y2: 14,
-      x3: 23,
-      y3: 32,
-      x4: 41,
-      y4: 32.2
-    },
-    {
-      part1: "./src/img/hands/down_1.png",
-      part2: "./src/img/hands/down_2.png",
-      part3: null,
-      part4: null,
-      x1: 40,
-      y1: 32,
-      x2: 41,
-      y2: 42,
-      x3: 0,
-      y3: 0,
-      x4: 0,
-      y4: 0
-    }
-  ]
+    this.klatkiReki = [
+      {
+        part1: "../dist/img/hands/up_1.png",
+        part2: "../dist/img/hands/up_2.png",
+        part3: "../dist/img/hands/up_3.png",
+        part4: null,
+        x1: 38,
+        y1: -4,
+        x2: 38,
+        y2: 14,
+        x3: 39,
+        y3: 32.2,
+        x4: 0,
+        y4: 0
+      },
+      {
+        part1: "../dist/img/hands/middle11.png",
+        part2: "../dist/img/hands/middle12.png",
+        part3: "../dist/img/hands/middle21.png",
+        part4: "../dist/img/hands/middle22.png",
+        x1: 23,
+        y1: 14,
+        x2: 41,
+        y2: 14,
+        x3: 23,
+        y3: 32,
+        x4: 41,
+        y4: 32.2
+      },
+      {
+        part1: "../dist/img/hands/down_1.png",
+        part2: "../dist/img/hands/down_2.png",
+        part3: null,
+        part4: null,
+        x1: 40,
+        y1: 32,
+        x2: 41,
+        y2: 42,
+        x3: 0,
+        y3: 0,
+        x4: 0,
+        y4: 0
+      }
+    ]
 
-  this.aktualnaKlatkaReki = 0
-}
+    this.aktualnaKlatkaReki = 0
+  }
 
   rysujKlatkeReki() {
     const handPart1 = document.getElementById("rekaCzesc1") as HTMLImageElement | null
@@ -353,17 +352,17 @@ export class Gra {
       return
     }
 
-    handPart1.src = "./src/img/hands/up_1.png"
+    handPart1.src = "../dist/img/hands/up_1.png"
     handPart1.style.left = "38px"
     handPart1.style.top = "-4px"
     handPart1.style.display = "block"
 
-    handPart2.src = "./src/img/hands/up_2.png"
+    handPart2.src = "../dist/img/hands/up_2.png"
     handPart2.style.left = "38px"
     handPart2.style.top = "14px"
     handPart2.style.display = "block"
 
-    handPart3.src = "./src/img/hands/up_3.png"
+    handPart3.src = "../dist/img/hands/up_3.png"
     handPart3.style.left = "39px"
     handPart3.style.top = "32.2px"
     handPart3.style.display = "block"
@@ -373,23 +372,23 @@ export class Gra {
 
   pobierzSrcRzutu(kolor: KolorPola, typ: "left" | "right" | "up" | "down"): string {
     if (kolor === "red") {
-      if (typ === "left") return "./src/img/br_left.png"
-      if (typ === "right") return "./src/img/br_right.png"
-      if (typ === "up") return "./src/img/br_up.png"
-      return "./src/img/br_down.png"
+      if (typ === "left") return "../dist/img/br_left.png"
+      if (typ === "right") return "../dist/img/br_right.png"
+      if (typ === "up") return "../dist/img/br_up.png"
+      return "../dist/img/br_down.png"
     }
 
     if (kolor === "blue") {
-      if (typ === "left") return "./src/img/bl_left.png"
-      if (typ === "right") return "./src/img/bl_right.png"
-      if (typ === "up") return "./src/img/bl_up.png"
-      return "./src/img/bl_down.png"
+      if (typ === "left") return "../dist/img/bl_left.png"
+      if (typ === "right") return "../dist/img/bl_right.png"
+      if (typ === "up") return "../dist/img/bl_up.png"
+      return "../dist/img/bl_down.png"
     }
 
-    if (typ === "left") return "./src/img/yl_left.png"
-    if (typ === "right") return "./src/img/yl_right.png"
-    if (typ === "up") return "./src/img/yl_up.png"
-    return "./src/img/yl_down.png"
+    if (typ === "left") return "../dist/img/yl_left.png"
+    if (typ === "right") return "../dist/img/yl_right.png"
+    if (typ === "up") return "../dist/img/yl_up.png"
+    return "../dist/img/yl_down.png"
   }
 
   rzucNowaTabletke() {
@@ -452,33 +451,32 @@ export class Gra {
     ]
 
     const sprajty = [
-    { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 16, dy1: 0,   dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorB, "up"),    src2: this.pobierzSrcRzutu(kolorA, "down"), dx2: 0, dy1: -14,   dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorB, "left"),  src2: this.pobierzSrcRzutu(kolorA, "right"), dx2: 16, dy1: 0,   dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorA, "up"),    src2: this.pobierzSrcRzutu(kolorB, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 16, dy1: 0,   dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorB, "up"),    src2: this.pobierzSrcRzutu(kolorA, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorB, "left"),  src2: this.pobierzSrcRzutu(kolorA, "right"), dx2: 16, dy1: 0,   dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorA, "up"),    src2: this.pobierzSrcRzutu(kolorB, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 16, dy1: 0,   dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorB, "up"),    src2: this.pobierzSrcRzutu(kolorA, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorB, "left"),  src2: this.pobierzSrcRzutu(kolorA, "right"), dx2: 16, dy1: 0,   dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorA, "up"),    src2: this.pobierzSrcRzutu(kolorB, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 16, dy1: 0,   dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorB, "up"),    src2: this.pobierzSrcRzutu(kolorA, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorB, "left"),  src2: this.pobierzSrcRzutu(kolorA, "right"), dx2: 16, dy1: 0,   dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorA, "up"),    src2: this.pobierzSrcRzutu(kolorB, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 16, dy1: 0,   dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorB, "up"),    src2: this.pobierzSrcRzutu(kolorA, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorB, "left"),  src2: this.pobierzSrcRzutu(kolorA, "right"), dx2: 16, dy1: 0,   dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorA, "up"),    src2: this.pobierzSrcRzutu(kolorB, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 16, dy1: 0,   dy2: 0  },
-
-    { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 14, dy1: 0,   dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 14, dy1: 0,   dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 14, dy1: 0,   dy2: 0  },
-    { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 14, dy1: 0,   dy2: 0  }
-  ]
+      { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 16, dy1: 0,   dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorB, "up"),    src2: this.pobierzSrcRzutu(kolorA, "down"), dx2: 0, dy1: -14,   dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorB, "left"),  src2: this.pobierzSrcRzutu(kolorA, "right"), dx2: 16, dy1: 0,   dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorA, "up"),    src2: this.pobierzSrcRzutu(kolorB, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 16, dy1: 0,   dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorB, "up"),    src2: this.pobierzSrcRzutu(kolorA, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorB, "left"),  src2: this.pobierzSrcRzutu(kolorA, "right"), dx2: 16, dy1: 0,   dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorA, "up"),    src2: this.pobierzSrcRzutu(kolorB, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 16, dy1: 0,   dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorB, "up"),    src2: this.pobierzSrcRzutu(kolorA, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorB, "left"),  src2: this.pobierzSrcRzutu(kolorA, "right"), dx2: 16, dy1: 0,   dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorA, "up"),    src2: this.pobierzSrcRzutu(kolorB, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 16, dy1: 0,   dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorB, "up"),    src2: this.pobierzSrcRzutu(kolorA, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorB, "left"),  src2: this.pobierzSrcRzutu(kolorA, "right"), dx2: 16, dy1: 0,   dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorA, "up"),    src2: this.pobierzSrcRzutu(kolorB, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 16, dy1: 0,   dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorB, "up"),    src2: this.pobierzSrcRzutu(kolorA, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorB, "left"),  src2: this.pobierzSrcRzutu(kolorA, "right"), dx2: 16, dy1: 0,   dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorA, "up"),    src2: this.pobierzSrcRzutu(kolorB, "down"),  dx2: 0,  dy1: -14, dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 16, dy1: 0,   dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 14, dy1: 0,   dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 14, dy1: 0,   dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 14, dy1: 0,   dy2: 0  },
+      { src1: this.pobierzSrcRzutu(kolorA, "left"),  src2: this.pobierzSrcRzutu(kolorB, "right"), dx2: 14, dy1: 0,   dy2: 0  }
+    ]
 
     let index = 0
 
@@ -506,7 +504,6 @@ export class Gra {
       }
 
       this.rysujKlatkeReki()
-
 
       lewaPolowka.src = sprite.src1
       prawaPolowka.src = sprite.src2
@@ -598,7 +595,7 @@ export class Gra {
     for (let i = 0; i < tekst.length; i++) {
       const cyfra = tekst[i]!
       const img = document.createElement("img")
-      img.src = `./src/img/cyfry/${cyfra}.png`
+      img.src = `../dist/img/cyfry/${cyfra}.png`
       img.alt = cyfra
       element.appendChild(img)
     }
@@ -606,19 +603,19 @@ export class Gra {
   
   ustawPozycjeWirusowWLupie() {
     this.pozycjeWirusowWLupie = [
-      { x: 68, y: 18 },   // 0 góra
-      { x: 80, y: 22 },   // 1 góra i prawo
-      { x: 98, y: 34 },  // 2
-      { x: 108, y: 54 },  // 3 prawo
-      { x: 104, y: 78 },  // 4
-      { x: 90, y: 96 },   // 5 prawo i dół
-      { x: 66, y: 108 },  // 6 dół
-      { x: 40, y: 104 },  // 7 dół i lewo
-      { x: 20, y: 92 },   // 8
-      { x: 12, y: 74 },   // 9 lewo
-      { x: 16, y: 50 },   // 10
-      { x: 30, y: 30 },   // 11 lewo i góra
-      { x: 48, y: 20 }    // 12
+      { x: 68, y: 18 },
+      { x: 80, y: 22 },
+      { x: 98, y: 34 },
+      { x: 108, y: 54 },
+      { x: 104, y: 78 },
+      { x: 90, y: 96 },
+      { x: 66, y: 108 },
+      { x: 40, y: 104 },
+      { x: 20, y: 92 },
+      { x: 12, y: 74 },
+      { x: 16, y: 50 },
+      { x: 30, y: 30 },
+      { x: 48, y: 20 }
     ]
   }
 
@@ -650,31 +647,31 @@ export class Gra {
 
   pobierzSrcLupy(kolor: "red" | "blue" | "yellow", klatka: number): string {
     if (kolor === "red") {
-      return `../src/img/lupa/br/${klatka}.png`
+      return `../dist/img/lupa/br/${klatka}.png`
     }
 
     if (kolor === "blue") {
-      return `../src/img/lupa/bl/${klatka}.png`
+      return `../dist/img/lupa/bl/${klatka}.png`
     }
 
-    return `../src/img/lupa/yl/${klatka}.png`
+    return `../dist/img/lupa/yl/${klatka}.png`
   }
 
   nastepnyIndeksLupyPrzeciwnieDoWskazowek(indeks: number): number {
     const przejscia: number[] = [
-      12, // 0 -> 12
-      0,  // 1 -> 0
-      1,  // 2 -> 1
-      2,  // 3 -> 2
-      3,  // 4 -> 3
-      4,  // 5 -> 4
-      5,  // 6 -> 5
-      6,  // 7 -> 6
-      7,  // 8 -> 7
-      8,  // 9 -> 8
-      9,  // 10 -> 9
-      10, // 11 -> 10
-      11  // 12 -> 11
+      12,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
     ]
 
     return przejscia[indeks]!
@@ -738,7 +735,6 @@ export class Gra {
       }
     }
   }
-
 
   uruchomAnimacjeLupy() {
     let animacjaWirusow = setInterval(() => {
@@ -850,7 +846,6 @@ export class Gra {
       if (jednoPole.kolumna === numerKolumny && jednoPole.wiersz === numerWiersza) {
         return true
       }
-      
     }
 
     return false
@@ -911,7 +906,6 @@ export class Gra {
   obrocTabletkeWPrawo() {
     const staryKierunek = this.aktualnaTabletka.kierunek
     const staraKolumna = this.aktualnaTabletka.kolumna
-
 
     this.aktualnaTabletka.kierunek = this.aktualnaTabletka.kierunek + 1;
 
@@ -1037,7 +1031,6 @@ export class Gra {
       this.wcisnieteKlawisze[e.key] = false;
     });
   }
-
 
   czyTabletkaJestWPlanszy() {
     const polaTabletki = this.aktualnaTabletka.pobierzPolaTabletki();
