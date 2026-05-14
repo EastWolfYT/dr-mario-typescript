@@ -4,13 +4,13 @@ export const rozmiarPolaX: number = 16
 export const rozmiarPolaY: number = 14
 
 export const wirusBrazowy = new Image()
-wirusBrazowy.src = "../dist/img/covid_brown.png"
+wirusBrazowy.src = "/dr-mario-typescript/dist/img/covid_brown.png"
 
 export const wirusNiebieski = new Image()
-wirusNiebieski.src = "../dist/img/covid_blue.png"
+wirusNiebieski.src = "/dr-mario-typescript/dist/img/covid_blue.png"
 
 export const wirusZolty = new Image()
-wirusZolty.src = "../dist/img/covid_yellow.png"
+wirusZolty.src = "/dr-mario-typescript/dist/img/covid_yellow.png"
 
 export function rysujKwadrat(kolumna: number, wiersz: number, kolor: string) {
   const x = kolumna * rozmiarPolaX
@@ -46,67 +46,67 @@ export function rysujWirus(kolumna: number, wiersz: number, kolor: string) {
 }
 
 export const brazowyLeft = new Image()
-brazowyLeft.src = "../dist/img/br_left.png"
+brazowyLeft.src = "/dr-mario-typescript/dist/img/br_left.png"
 
 export const brazowyRight = new Image()
-brazowyRight.src = "../dist/img/br_right.png"
+brazowyRight.src = "/dr-mario-typescript/dist/img/br_right.png"
 
 export const brazowyUp = new Image()
-brazowyUp.src = "../dist/img/br_up.png"
+brazowyUp.src = "/dr-mario-typescript/dist/img/br_up.png"
 
 export const brazowyDown = new Image()
-brazowyDown.src = "../dist/img/br_down.png"
+brazowyDown.src = "/dr-mario-typescript/dist/img/br_down.png"
 
 export const brazowyDot = new Image()
-brazowyDot.src = "../dist/img/br_dot.png"
+brazowyDot.src = "/dr-mario-typescript/dist/img/br_dot.png"
 
 export const zoltyLeft = new Image()
-zoltyLeft.src = "../dist/img/yl_left.png"
+zoltyLeft.src = "/dr-mario-typescript/dist/img/yl_left.png"
 
 export const zoltyRight = new Image()
-zoltyRight.src = "../dist/img/yl_right.png"
+zoltyRight.src = "/dr-mario-typescript/dist/img/yl_right.png"
 
 export const zoltyUp = new Image()
-zoltyUp.src = "../dist/img/yl_up.png"
+zoltyUp.src = "/dr-mario-typescript/dist/img/yl_up.png"
 
 export const zoltyDown = new Image()
-zoltyDown.src = "../dist/img/yl_down.png"
+zoltyDown.src = "/dr-mario-typescript/dist/img/yl_down.png"
 
 export const zoltyDot = new Image()
-zoltyDot.src = "../dist/img/yl_dot.png"
+zoltyDot.src = "/dr-mario-typescript/dist/img/yl_dot.png"
 
 export const niebieskiLeft = new Image()
-niebieskiLeft.src = "../dist/img/bl_left.png"
+niebieskiLeft.src = "/dr-mario-typescript/dist/img/bl_left.png"
 
 export const niebieskiRight = new Image()
-niebieskiRight.src = "../dist/img/bl_right.png"
+niebieskiRight.src = "/dr-mario-typescript/dist/img/bl_right.png"
 
 export const niebieskiUp = new Image()
-niebieskiUp.src = "../dist/img/bl_up.png"
+niebieskiUp.src = "/dr-mario-typescript/dist/img/bl_up.png"
 
 export const niebieskiDown = new Image()
-niebieskiDown.src = "../dist/img/bl_down.png"
+niebieskiDown.src = "/dr-mario-typescript/dist/img/bl_down.png"
 
 export const niebieskiDot = new Image()
-niebieskiDot.src = "../dist/img/bl_dot.png"
+niebieskiDot.src = "/dr-mario-typescript/dist/img/bl_dot.png"
 
 export const brazowyX = new Image()
-brazowyX.src = "../dist/img/br_x.png"
+brazowyX.src = "/dr-mario-typescript/dist/img/br_x.png"
 
 export const zoltyX = new Image()
-zoltyX.src = "../dist/img/yl_x.png"
+zoltyX.src = "/dr-mario-typescript/dist/img/yl_x.png"
 
 export const niebieskiX = new Image()
-niebieskiX.src = "../dist/img/bl_x.png"
+niebieskiX.src = "/dr-mario-typescript/dist/img/bl_x.png"
 
 export const brazowyO = new Image()
-brazowyO.src = "../dist/img/br_o.png"
+brazowyO.src = "/dr-mario-typescript/dist/img/br_o.png"
 
 export const zoltyO = new Image()
-zoltyO.src = "../dist/img/yl_o.png"
+zoltyO.src = "/dr-mario-typescript/dist/img/yl_o.png"
 
 export const niebieskiO = new Image()
-niebieskiO.src = "../dist/img/bl_o.png"
+niebieskiO.src = "/dr-mario-typescript/dist/img/bl_o.png"
 
 export function pobierzObrazekTabletki(kolor: string, typ: string): HTMLImageElement | null {
   if (kolor === "red") {

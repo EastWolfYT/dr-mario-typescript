@@ -217,24 +217,24 @@ export class Gra {
 
   pobierzSrcPreview(kolor: KolorPola, typ: string): string {
     if (kolor === "red") {
-      if (typ === "left") return "../dist/img/br_left.png"
-      if (typ === "right") return "../dist/img/br_right.png"
-      if (typ === "up") return "../dist/img/br_up.png"
-      if (typ === "down") return "../dist/img/br_down.png"
+      if (typ === "left") return "/dr-mario-typescript/dist/img/br_left.png"
+      if (typ === "right") return "/dr-mario-typescript/dist/img/br_right.png"
+      if (typ === "up") return "/dr-mario-typescript/dist/img/br_up.png"
+      if (typ === "down") return "/dr-mario-typescript/dist/img/br_down.png"
     }
 
     if (kolor === "blue") {
-      if (typ === "left") return "../dist/img/bl_left.png"
-      if (typ === "right") return "../dist/img/bl_right.png"
-      if (typ === "up") return "../dist/img/bl_up.png"
-      if (typ === "down") return "../dist/img/bl_down.png"
+      if (typ === "left") return "/dr-mario-typescript/dist/img/bl_left.png"
+      if (typ === "right") return "/dr-mario-typescript/dist/img/bl_right.png"
+      if (typ === "up") return "/dr-mario-typescript/dist/img/bl_up.png"
+      if (typ === "down") return "/dr-mario-typescript/dist/img/bl_down.png"
     }
     
     if (kolor === "yellow") {
-      if (typ === "left") return "../dist/img/yl_left.png"
-      if (typ === "right") return "../dist/img/yl_right.png"
-      if (typ === "up") return "../dist/img/yl_up.png"
-      if (typ === "down") return "../dist/img/yl_down.png"
+      if (typ === "left") return "/dr-mario-typescript/dist/img/yl_left.png"
+      if (typ === "right") return "/dr-mario-typescript/dist/img/yl_right.png"
+      if (typ === "up") return "/dr-mario-typescript/dist/img/yl_up.png"
+      if (typ === "down") return "/dr-mario-typescript/dist/img/yl_down.png"
     }
 
     return ""
@@ -243,9 +243,9 @@ export class Gra {
   ustawKlatkiReki() {
     this.klatkiReki = [
       {
-        part1: "../dist/img/hands/up_1.png",
-        part2: "../dist/img/hands/up_2.png",
-        part3: "../dist/img/hands/up_3.png",
+        part1: "/dr-mario-typescript/dist/img/hands/up_1.png",
+        part2: "/dr-mario-typescript/dist/img/hands/up_2.png",
+        part3: "/dr-mario-typescript/dist/img/hands/up_3.png",
         part4: null,
         x1: 38,
         y1: -4,
@@ -257,10 +257,10 @@ export class Gra {
         y4: 0
       },
       {
-        part1: "../dist/img/hands/middle11.png",
-        part2: "../dist/img/hands/middle12.png",
-        part3: "../dist/img/hands/middle21.png",
-        part4: "../dist/img/hands/middle22.png",
+        part1: "/dr-mario-typescript/dist/img/hands/middle11.png",
+        part2: "/dr-mario-typescript/dist/img/hands/middle12.png",
+        part3: "/dr-mario-typescript/dist/img/hands/middle21.png",
+        part4: "/dr-mario-typescript/dist/img/hands/middle22.png",
         x1: 23,
         y1: 14,
         x2: 41,
@@ -271,8 +271,8 @@ export class Gra {
         y4: 32.2
       },
       {
-        part1: "../dist/img/hands/down_1.png",
-        part2: "../dist/img/hands/down_2.png",
+        part1: "/dr-mario-typescript/dist/img/hands/down_1.png",
+        part2: "/dr-mario-typescript/dist/img/hands/down_2.png",
         part3: null,
         part4: null,
         x1: 40,
@@ -352,17 +352,17 @@ export class Gra {
       return
     }
 
-    handPart1.src = "../dist/img/hands/up_1.png"
+    handPart1.src = "/dr-mario-typescript/dist/img/hands/up_1.png"
     handPart1.style.left = "38px"
     handPart1.style.top = "-4px"
     handPart1.style.display = "block"
 
-    handPart2.src = "../dist/img/hands/up_2.png"
+    handPart2.src = "/dr-mario-typescript/dist/img/hands/up_2.png"
     handPart2.style.left = "38px"
     handPart2.style.top = "14px"
     handPart2.style.display = "block"
 
-    handPart3.src = "../dist/img/hands/up_3.png"
+    handPart3.src = "/dr-mario-typescript/dist/img/hands/up_3.png"
     handPart3.style.left = "39px"
     handPart3.style.top = "32.2px"
     handPart3.style.display = "block"
@@ -372,23 +372,23 @@ export class Gra {
 
   pobierzSrcRzutu(kolor: KolorPola, typ: "left" | "right" | "up" | "down"): string {
     if (kolor === "red") {
-      if (typ === "left") return "../dist/img/br_left.png"
-      if (typ === "right") return "../dist/img/br_right.png"
-      if (typ === "up") return "../dist/img/br_up.png"
-      return "../dist/img/br_down.png"
+      if (typ === "left") return "/dr-mario-typescript/dist/img/br_left.png"
+      if (typ === "right") return "/dr-mario-typescript/dist/img/br_right.png"
+      if (typ === "up") return "/dr-mario-typescript/dist/img/br_up.png"
+      return "/dr-mario-typescript/dist/img/br_down.png"
     }
 
     if (kolor === "blue") {
-      if (typ === "left") return "../dist/img/bl_left.png"
-      if (typ === "right") return "../dist/img/bl_right.png"
-      if (typ === "up") return "../dist/img/bl_up.png"
-      return "../dist/img/bl_down.png"
+      if (typ === "left") return "/dr-mario-typescript/dist/img/bl_left.png"
+      if (typ === "right") return "/dr-mario-typescript/dist/img/bl_right.png"
+      if (typ === "up") return "/dr-mario-typescript/dist/img/bl_up.png"
+      return "/dr-mario-typescript/dist/img/bl_down.png"
     }
 
-    if (typ === "left") return "../dist/img/yl_left.png"
-    if (typ === "right") return "../dist/img/yl_right.png"
-    if (typ === "up") return "../dist/img/yl_up.png"
-    return "../dist/img/yl_down.png"
+    if (typ === "left") return "/dr-mario-typescript/dist/img/yl_left.png"
+    if (typ === "right") return "/dr-mario-typescript/dist/img/yl_right.png"
+    if (typ === "up") return "/dr-mario-typescript/dist/img/yl_up.png"
+    return "/dr-mario-typescript/dist/img/yl_down.png"
   }
 
   rzucNowaTabletke() {
@@ -595,7 +595,7 @@ export class Gra {
     for (let i = 0; i < tekst.length; i++) {
       const cyfra = tekst[i]!
       const img = document.createElement("img")
-      img.src = `../dist/img/cyfry/${cyfra}.png`
+      img.src = `/dr-mario-typescript/dist/img/cyfry/${cyfra}.png`
       img.alt = cyfra
       element.appendChild(img)
     }
@@ -647,14 +647,14 @@ export class Gra {
 
   pobierzSrcLupy(kolor: "red" | "blue" | "yellow", klatka: number): string {
     if (kolor === "red") {
-      return `../dist/img/lupa/br/${klatka}.png`
+      return `/dr-mario-typescript/dist/img/lupa/br/${klatka}.png`
     }
 
     if (kolor === "blue") {
-      return `../dist/img/lupa/bl/${klatka}.png`
+      return `/dr-mario-typescript/dist/img/lupa/bl/${klatka}.png`
     }
 
-    return `../dist/img/lupa/yl/${klatka}.png`
+    return `/dr-mario-typescript/dist/img/lupa/yl/${klatka}.png`
   }
 
   nastepnyIndeksLupyPrzeciwnieDoWskazowek(indeks: number): number {
